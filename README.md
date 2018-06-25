@@ -1,0 +1,2 @@
+# slicing
+Slicing Magang Gamatechno
