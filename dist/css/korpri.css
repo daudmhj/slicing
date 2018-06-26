@@ -1,3 +1,16 @@
+.first-header{
+	width: 100%;
+	height: 28px;
+	background-color: #040466;
+	z-index: 1031;
+	position: relative;
+	padding: 5px;
+}
+.first-header-logout{
+	float: right;
+	margin-right: 20px;
+	color: white;
+}
 .title-top {
 background-color: #f8f9fb;
 padding: 4px;
@@ -36,7 +49,7 @@ display: none;
 }
 .image-upload {
 text-align: center;
-padding: 20px;
+/*padding: 20px;*/
 /* border: 2px solid #e6dede;
 background-color: #f8f9fb;*/
 }
@@ -80,4 +93,32 @@ border-left: none;
 #blah{
 height: 140px;
 width: 140px;
+}
+.after-upload{
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+.chapcha{
+	display: block; width: 250px; background-color: #f8f9fb; margin-bottom: 20px;
+	padding: 10px;
+}
+.skin-blue .sidebar-menu > li > a {
+    border-left: 3px solid transparent;
+}
+.skin-blue .sidebar a {
+    color: black;
+}
+.sidebar-menu li > a {
+    position: relative;
+}
+.sidebar-menu > li > a {
+    padding: 12px 5px 12px 15px;
+    display: block;
+}
+.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a, .skin-blue .sidebar-menu > li.menu-open > a {
+    color: black;
+    border-left: 3px solid red;
+    background-color: white;
 }

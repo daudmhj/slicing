@@ -8,8 +8,6 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Korpri CSS -->
-  <link rel="stylesheet" href="dist/css/korpri.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
@@ -30,7 +28,8 @@
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
+  <!-- Korpri CSS -->
+  <link rel="stylesheet" href="dist/css/korpri.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -44,17 +43,19 @@
 
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
+  <div class="first-header">
+    <a class="first-header-logout" href="#">Logout</a>
+  </div>
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="index2.html" class="logo" style="background-color: #000080; border-bottom: 2px solid red">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>K-A<b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>KAT-AERO</b></span>
+      <span class="logo-lg" style="background-color: red"><b>KAT-AERO</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-static-top" style="background-color: #000080; border-bottom: 2px solid red; height: 48px">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
@@ -88,9 +89,9 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside class="main-sidebar" style="background-color: white; border-right: 2px solid #e6dede; color: grey;">
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
+    <section class="sidebar" style="margin-top: 40px;">
       <!-- Sidebar user panel -->
 
       <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -101,7 +102,7 @@
             <i class="fa fa-fw fa-user-plus"></i> <span>Pendaftaran</span>
           </a>
         </li>
-        <li>
+        <li class="active">
           <a href="konfirmasi.html">
             <i class="fa fa-fw fa-credit-card"></i> <span>Konfirmasi Pembayaran</span>
           </a>
@@ -110,7 +111,6 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper wrapper-new">
     <!-- Content Header (Page header) -->
@@ -128,7 +128,7 @@
       <p class="label-top">Silahkan Unggah Bukti Pembayaran yang Anda miliki</p>
       <div class="image-upload">
         <label for="bukti">
-          <i class="fa fa-upload" aria-hidden="true" style="height: 150px; width: 200px;"></i>
+          <i class="fa fa-upload" aria-hidden="true" style="height: 140px; width: 280px; font-size: 140px"></i>
           <br><br>
           <p>Drag and drop your files here</p>
           <p>or browse to begin upload</p>
@@ -164,7 +164,7 @@
       </div>
     </section>
 
-    <section class="content-top">
+    <section class="subtitle-top">
       <div class="box-footer" >
         <button type="submit" class="btn btn-success" style="float: right; margin-right:100px;">Unggah</button>
       </div>
