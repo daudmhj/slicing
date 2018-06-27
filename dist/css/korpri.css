@@ -122,3 +122,23 @@ width: 140px;
     border-left: 3px solid red;
     background-color: white;
 }
+
+.subtitle-top-details{
+	float: right;
+	color: #5c9ef5;
+	/*display: inline-block;*/
+	margin-right: 20px;
+}
+.details-top{
+	margin-top: 20px;
+}
+.details-img{
+	height: 150px;
+	width: 180px;
+}
+.details-item{
+	padding: 15px;
+}
+.details-item:hover{
+	background-color: #f8f9fb;
+}
