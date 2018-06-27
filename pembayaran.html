@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pesanan | KAT-AERO</title>
+  <title>Konfirmasi | KAT-AERO</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Korpri CSS -->
-  <link rel="stylesheet" href="dist/css/korpri.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
@@ -30,7 +28,8 @@
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
+  <!-- Korpri CSS -->
+  <link rel="stylesheet" href="dist/css/korpri.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -44,17 +43,19 @@
 
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
+  <div class="first-header">
+    <a class="first-header-logout" href="login.html">Logout</a>
+  </div>
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="index2.html" class="logo" style="background-color: #000080; border-bottom: 2px solid red">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>K-A<b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>KAT-AERO</b></span>
+      <span class="logo-lg" style="background-color: red"><b>KAT-AERO</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-static-top" style="background-color: #000080; border-bottom: 2px solid red; height: 48px">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
@@ -88,9 +89,9 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside class="main-sidebar" style="background-color: white; border-right: 2px solid #e6dede; color: grey;">
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
+    <section class="sidebar" style="margin-top: 40px;">
       <!-- Sidebar user panel -->
 
       <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -102,7 +103,7 @@
           </a>
         </li>
         <li>
-          <a href="informasi.html">
+          <a href="pendaftaran.html">
             <i class="fa fa-fw fa-credit-card"></i> <span>Informasi Pribadi & Dokumen</span>
           </a>
         </li>
@@ -125,53 +126,75 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper wrapper-new">
     <!-- Content Header (Page header) -->
     <section class="title-top">
-      <h5>
-        Pendaftaran
+      <h5 style="font-weight: bold;">
+        Pembayaran
       </h5>
     </section>
 
-    <section class="subtitle-top">
-      <h5>Konfirmasi Pembayaran</h5>
-    </section>
-
     <section class="content-top">
-      <p class="label-top">Silahkan Unggah Bukti Pembayaran yang Anda miliki</p>
-      <div class="form-group">
-        <input class="label-top" type="file" id="bukti">
-      </div>
-    </section>
+      <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#histori" data-toggle="tab">Histori Pembayaran</a></li>
+          <li><a href="#unggah" data-toggle="tab">Unggah Bukti Bayar</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="active tab-pane" id="histori">
+            <div class="box">
+              <div class="box-body no-padding">
+                <table class="table table-striped">
+                  <tr>
+                    <th>Komponen</th>
+                    <th>Nominal</th>
+                    <th>Tgl Bayar</th>
+                    <th style="width: 40px"></th>
+                  </tr>
+                  <tr>
+                    <td>Uang Muka</td>
+                    <td>Rp 5.000.000</td>
+                    <td>1 Mei 2018 09:00:02</td>
+                    <td><i class="fa fa-info"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Uang Pelunasan</td>
+                    <td>Rp 20.000.000</td>
+                    <td>1 Agustus 2018 12:00:04</td>
+                    <td><i class="fa fa-info"></i></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.tab-pane -->
 
-    <section class="content-top">
-      <div class="box-footer">
-        <div class="form-group row">
-          <div class="col-md-2">
-            <label for="keterangan" class="label-top">Keterangan</label>
+          <div class="tab-pane" id="unggah">
+            <h5>Silahkan unggah bukti pembayaran yang Anda miliki</h5>
+            <div class="image-upload content-top">
+              <label for="bukti">
+                <i class="fa fa-upload" aria-hidden="true" style="height: 200px; width: 350px; font-size: 200px"></i>
+                <br><br>
+                <p>Drag and drop your files here</p>
+                <p>or browse to begin upload</p>
+              </label>
+              <input type="file" id="bukti">
+            </div>
+            <div class="box-footer">
+              <button type="submit" class="btn btn-success" style="float: right; margin-right:100px;">Simpan</button>
+            </div>
           </div>
-          <div class="col-md-4">
-            <input type="text" class="form-control form-top" id="keterangan" placeholder="Keterangan" required>
-          </div>
+          <!-- /.tab-pane -->
+
         </div>
-        <div class="form-group row">
-          <div class="col-md-2">
-            <label for="no_pendaftaran" class="label-top">Nomor Pendaftaran</label>
-          </div>
-          <div class="col-md-4">
-            <input type="text" class="form-control form-top" id="no_pendaftaran" placeholder="No Pendaftaran" required>
-          </div>
-        </div>
+        <!-- /.tab-content -->
       </div>
+      <!-- /.nav-tabs-custom -->
     </section>
 
-    <section class="content-top">
-      <div class="box-footer" style="text-align:right">
-        <button type="submit" class="btn btn-success">Unggah</button>
-      </div>
-    </section>
   </div>
   <!-- /.content-wrapper -->
 
