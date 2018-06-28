@@ -140,3 +140,21 @@ width: 140px;
 .details-item:hover{
 	background-color: #f8f9fb;
 }
+.table-histori{
+	border: 2px solid black;
+}
+.table-histori > thead > tr > th,
+.table-histori > tbody > tr > th,
+.table-histori > tfoot > tr > th,
+.table-histori > thead > tr > td,
+.table-histori > tbody > tr > td,
+.table-histori > tfoot > tr > td {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.table-histori > tbody > tr:nth-of-type(even) {
+  background-color: #ECF0F1;
+}
+.content-wrapper{
+	min-height: 0px !important;
+}

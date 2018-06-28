@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MyBookings | KAT-AERO</title>
+  <title>Hotel | KAT-AERO</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -44,7 +44,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <div class="first-header">
-    <a class="first-header-logout" href="#">Logout</a>
+    <a class="first-header-logout" href="login.html">Logout</a>
   </div>
   <header class="main-header">
     <!-- Logo -->
@@ -97,29 +97,14 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <!-- <li class="header">MAIN NAVIGATION</li> -->
-        <li>
-          <a href="PesananSaya.html">
-            <i class="fa fa-fw fa-cart-plus"></i> <span>Pesanan</span>
-          </a>
-        </li>
-        <li>
+        <li class="active">
           <a href="pendaftaran.html">
-            <i class="fa fa-fw fa-credit-card"></i> <span>Informasi Pribadi & Dokumen</span>
+            <i class="fa fa-fw fa-user-plus"></i> <span>Pendaftaran</span>
           </a>
         </li>
         <li>
-          <a href="pembayaran.html">
-            <i class="fa fa-fw fa-money"></i> <span>Pembayaran</span>
-          </a>
-        </li>
-        <li>
-          <a href="penerbangan.html">
-            <i class="fa fa-fw fa-plane"></i> <span>Penerbangan</span>
-          </a>
-        </li>
-        <li>
-          <a href="hotel.html">
-            <i class="fa fa-fw fa-building"></i> <span>Hotel</span>
+          <a href="konfirmasi.html">
+            <i class="fa fa-fw fa-credit-card"></i> <span>Konfirmasi Pembayaran</span>
           </a>
         </li>
       </ul>
@@ -132,159 +117,93 @@
     <!-- Content Header (Page header) -->
     <section class="title-top">
       <h5 style="font-weight: bold;">
-        MyBookings
+        Hotel
       </h5>
     </section>
     <section class="subtitle-top">
       <h5>
-        Hi Agus, ini adalah informasi pesanan Anda
+        Silahkan unggah bukti pembayaran yang anda miliki
       </h5>
     </section>
-     <section class="subtitle-top">
-      <i class="fa fa-check-circle" aria-hidden="true" style="color:#11d111; margin-left: 20px"></i>
-      <h5 style="font-weight: bold; display: inline-block;">
-         My Flight
-      </h5>
-      <div class="subtitle-top-details">
-        <h5 style="display: inline-block;">details</h5>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-      </div>
-      <div class="details-top">
-        <div style="padding: 15px">
-          <div>
-          <div class="row">
-            <div class="col-md-8">
-              <h5>Jakarta (CGK) - Tashkent (TAS)</5h>
-            </div>
-            <div class="col-md-4">
-              <h5>Booking ID: AGYRY767</h5>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="row">
-            <div class="col-md-4">
-              <h5>No. Penerbangan: </5h>
-                <h5>UZ77767</5h>
-            </div>
-            <div class="col-md-4">
-              <h5>Jadwal Penerbangan</h5>
-              <h5>8 Okt -- 17.00 WIB</h5>
-            </div>
-            <div class="col-md-4">
-              <h5>Embarkasi</h5>
-              <h5>Soekarno Hatta (CGK)</h5>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="row">
-            <div class="col-md-4">
-              <h5>No. Tempat Duduk: </5h>
-                <h5>29F</5h>
-            </div>
-            <div class="col-md-4">
-              <h5>On Board Meal</h5>
-              <h5>Tersedia</h5>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
+
     <!-- Main content -->
-    <section class="content content-top" style="padding-left: 0;; padding-right: 0">
-      <i class="fa fa-check-circle" aria-hidden="true" style="color:   #11d111; margin-left: 30px"></i>
-      <h5 style="font-weight: bold; display: inline-block;">
-         My Hotels
-      </h5>
-      <div class="subtitle-top-details">
-        <h5 style="display: inline-block;">details</h5>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    <section class="content content-top" style="padding:0px; margin:0px;">
+    <!-- GROUP FORM -->
+    <div class="row">
+      <div class="row group-form" style="background-color: #f8f9fb">
+        <div class="col-md-6 label-top">
+          <p>Uzbekistan - 10 & 18 Agustus 2018</p>
+          <h5>Hotel</h5>
+          <select class="form-control form-top">
+            <option>Hyatt Regency Tashkent</option>
+            <option>Hotel B</option>
+            <option>Hotel C</option>
+          </select>
+          <h6>Fasilitas : Kamar Mandi - AC - King Size Bed</h6>
+        </div>
+        <div class="col-md-6">
+          <h5>No. Kamar</h5>
+          <select class="form-control form-top">
+            <option>401</option>
+            <option>402</option>
+            <option>403</option>
+          </select>
+        </div>
       </div>
-      <div class="details-top">
-        <!-- details item start -->
-        <div class="details-item">
-          <div class="row">
-            <div class="col-md-4">
-              <div style="text-align: center; margin: 0 auto">
-                <h5>Rabu, 1 Augustus 2018</h5>
-                <div class="details-img" style="background: url('dist/img/hot1.jpg'); background-position: center;background-size: 100%; background-repeat: no-repeat; margin: 0 auto;"></div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="padding-top: 40px;">
-                <h4>Uzbekistan</h4>
-                <h5>Hyatt Regency Tashkent</h5>
-                <h5>Navol Street 1 Tashkent</h5>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="padding-top: 40px;">
-                <h4>Booking Code: AGYR767</h4>
-                <h5>Deluxe</h5>
-                <h5>Termasuk Sarapan</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- details item end -->
-        <!-- details item start -->
-        <div class="details-item">
-          <div class="row">
-            <div class="col-md-4">
-              <div style="text-align: center; margin: 0 auto">
-                <h5>Kamis, 2 Augstus 2018</h5>
-                <div class="details-img" style="background: url('dist/img/hot2.jpg'); background-position: center;background-size: 100%; background-repeat: no-repeat; margin: 0 auto;"></div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="padding-top: 40px;">
-                <h4>Madinah</h4>
-                <h5>Madinah Hilton Hotel</h5>
-                <h5>Opposite Prophet Mosque, King Fahd Str Al Madinah</h5>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="padding-top: 40px;">
-                <h4>Booking Code: AGYR768</h4>
-                <h5>Deluxe</h5>
-                <h5>Termasuk Sarapan</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- details item end -->
-        <!-- details item start -->
-        <div class="details-item">
-          <div class="row">
-            <div class="col-md-4">
-              <div style="text-align: center; margin: 0 auto">
-                <h5>Jumat, 3 Augstus 2018</h5>
-                <div class="details-img" style="background: url('dist/img/hot3.jpg'); background-position: center;background-size: 100%; background-repeat: no-repeat; margin: 0 auto;"></div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="padding-top: 40px;">
-                <h4>Mekkah</h4>
-                <h5>Dar Al Tawhed Intercontinental</h5>
-                <h5>Ibrahem Al Khaled Street Makkah</h5>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="padding-top: 40px;">
-                <h4>Booking Code: AGYR767</h4>
-                <h5>Deluxe</h5>
-                <h5>Termasuk Sarapan</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- details item end -->
-      </div>
+     <div class="row group-form">
+       <div class="col-md-6 label-top">
+         <p>Madinah - 11 & 19 Agustus 2018</p>
+         <h5>Hotel</h5>
+         <select class="form-control form-top">
+           <option>Hyatt Regency Tashkent</option>
+           <option>Hotel B</option>
+           <option>Hotel C</option>
+         </select>
+         <h6>Fasilitas : Kamar Mandi - AC - King Size Bed</h6>
+       </div>
+       <div class="col-md-6">
+         <h5>No. Kamar</h5>
+         <select class="form-control form-top">
+           <option>401</option>
+           <option>402</option>
+           <option>403</option>
+         </select>
+       </div>
+     </div>
+     <div class="row group-form" style="background-color: #f8f9fb">
+       <div class="col-md-6 label-top">
+         <p>Mekah - 17 & 20 Agustus 2018</p>
+         <h5>Hotel</h5>
+         <select class="form-control form-top">
+           <option>Hyatt Regency Tashkent</option>
+           <option>Hotel B</option>
+           <option>Hotel C</option>
+         </select>
+         <h6>Fasilitas : Kamar Mandi - AC - King Size Bed</h6>
+       </div>
+       <div class="col-md-6">
+         <h5>No. Kamar</h5>
+         <select class="form-control form-top">
+           <option>401</option>
+           <option>402</option>
+           <option>403</option>
+         </select>
+       </div>
+     </div>
+    </div>
+
      <!-- END GROUP FORM -->
     </section>
 
+    <section class="subtitle-top">
+      <div class="row">
+        <div class="form-group" style="display: block; float: right; padding: 15px; margin-right: 30px">
+          <form action="pembayaran.html">
+          <button style="float: right;" class="btn btn-success">Simpan</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
