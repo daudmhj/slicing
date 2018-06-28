@@ -154,12 +154,11 @@ width: 140px;
 	border-right: 2px solid black;
 }
 .table-histori > tbody > tr:nth-of-type(even) {
-  background-color: #ECF0F1;
+  background-color: #f8f9fb;
+}
+.table-histori > tbody > tr:hover {
+  background-color: #f8f9fb;
 }
 .content-wrapper{
 	min-height: 0px !important;
-}
-
-.content-wrapper {
-    min-height: 0px !important;
 }
