@@ -37,6 +37,7 @@ margin: 5px;
 }
 .wrapper-new{
 background-color: #fff;
+/*min-height: 0;*/
 }
 .validation-icon
 {
@@ -139,4 +140,7 @@ width: 140px;
 }
 .details-item:hover{
 	background-color: #f8f9fb;
+}
+.content-wrapper {
+    min-height: 0px !important;
 }
