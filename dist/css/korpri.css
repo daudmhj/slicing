@@ -437,3 +437,6 @@ ol {
     right: 0;
   }
 }
+.main-header #togglepenerbangan.sidebar-toggle:before {
+  content: "\f142";
+}
